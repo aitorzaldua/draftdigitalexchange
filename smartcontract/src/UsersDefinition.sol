@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
 
+
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -97,7 +98,4 @@ contract UserDefinition is AccessControl, Ownable {
     }
 
     //Test if I am a validated user:
-    function onlyUser() public view onlyRole(USER_ROLE) {
-        console.log("Hi, I am user");
-    }
 }
