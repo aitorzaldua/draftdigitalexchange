@@ -1,5 +1,4 @@
 [
-  { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
   {
     "inputs": [{ "internalType": "string", "name": "_name", "type": "string" }],
     "name": "addName",
@@ -40,7 +39,7 @@
             "type": "string"
           }
         ],
-        "internalType": "struct Paypal.sendReceive[]",
+        "internalType": "struct TransferCurrency.sendReceive[]",
         "name": "",
         "type": "tuple[]"
       }
@@ -59,7 +58,7 @@
           { "internalType": "string", "name": "name", "type": "string" },
           { "internalType": "bool", "name": "hasName", "type": "bool" }
         ],
-        "internalType": "struct Paypal.userName",
+        "internalType": "struct TransferCurrency.userName",
         "name": "",
         "type": "tuple"
       }
@@ -71,20 +70,13 @@
     "inputs": [
       { "internalType": "address", "name": "_user", "type": "address" }
     ],
-    "name": "getMyRequests",
+    "name": "getMyRequets",
     "outputs": [
       { "internalType": "address[]", "name": "", "type": "address[]" },
       { "internalType": "uint256[]", "name": "", "type": "uint256[]" },
       { "internalType": "string[]", "name": "", "type": "string[]" },
       { "internalType": "string[]", "name": "", "type": "string[]" }
     ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "owner",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },
